@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pseudoelementos</title>
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="imagenes/Cuando el amor no toca la puerta.gif" type="imagenes">
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="col-xs-12 col-md-12 col-lg-12 buscador">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <header class="container">
+            <div class="titulo">
+              <div class="col-xs-12 col-md-12 col-xl-12titulo01">
+                <h1 style="font-size: 7rem;"><center>PseudoClases</center></h1>
+              </div>
+            </div>
+            <section class="row 1">
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::ACTIVO </h1>
+                <p> Representa un elemento (como un botón) que el usuario está activando. Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos a y button, pero también se puede usar en otros elementos.</p>
+                <a class="click" href="https://i.pinimg.com/originals/f2/3b/49/f23b49ed78f1d98abae88662bb407058.jpg">HAGA CLICK</a>
+                <a href="https://i.pinimg.com/originals/f2/3b/49/f23b49ed78f1d98abae88662bb407058.jpg">Este enlace cambiará a color lima mientras hace clic en él.</a><wbr>
+        
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::CUALQUIER ENLANCE </h1>
+                <p>Representa un elemento que actúa como el ancla origen de un hipervínculo independientemente de si ha sido visitado, es decir, coincide con cualquier elemento a, area o link con un atributo href. Por lo tanto, coinciden con todos los elementos que coinciden con :linko :visited.</p>
+                <div>
+                    <a href="https://i.pinimg.com/originals/8e/f9/cf/8ef9cf9f72fcda10487009d85a834552.jpg">Enlace externo</a><br>
+                    <a href="#">Enlace de destino interno</a><br>
+                    <a>Enlace de marcador de posición (no se personalizará)</a>
+                    
+                  </div>
+              </div> 
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::AUTO COMPLETAR </h1>
+                <P>La pseudoclase CSS :-webkit-autofillCSS selecciona un elemento input cuando su valor se rellena automáticamente por el navegador.</P>
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::BLANCO </h1>
+                <P>La pseudo-clase CSS :blank selecciona elementos de entrada vacíos (p. ej. input o textarea).</P>
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::COMPROBA DO </h1>
+                <P>Representa cualquier radio ( input type="radio" (en-US)), checkbox ( input type="checkbox" ) u option ( option en un elemento select) que está marcado o conmutado a un estado on.</P>
+                <div>
+                    <input type="radio" name="my-input" id="yes">
+                    <label for="si">Si</label>
+                  
+                    <input type="radio" name="my-input" id="no">
+                    <label for="no">No</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox" name="my-checkbox" id="opt-in">
+                    <label for="opt-in">Presioname</label>
+                  </div>
+                  
+                  <select name="my-select" id="fruit">
+                    <option value="opt1">miau:)</option>
+                    <option value="opt2">miau:l</option>
+                    <option value="opt3">miau:(</option>
+                  </select>
+                  
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::ACTUAL </h1>
+                <P>Es una pseudoclase de dimensión temporal que representa un elemento o el ancestro de un elemento que se muestra actualmente. Por ejemplo, esta pseudoclase se puede usar para representar un video que WebVTT muestra con subtítulos .:current</P>
+                <video controls preload="metadata" width="250vh">
+                    <source src="video.mp4" type="gif" />
+                    <source src="video.webm" type="video/webm" />
+                    <track
+                      label="English"
+                      kind="subtitles"
+                      srclang="en"
+                      src="subtitles.vtt"
+                      default />
+                  </video>
+                  
+              </div> 
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::POR DEFECTO </h1>
+                <P>Selecciona elementos de formulario que son los predeterminados en un grupo de elementos relacionados.:default</P>
+                <fieldset>
+                    <legend>Tipo de Gato</legend>
+                  
+                    <input type="radio" name="season" id="spring" value="spring" />
+                    <label for="spring">Naranja</label>
+                  
+                    <input type="radio" name="season" id="summer" value="summer" checked />
+                    <label for="summer">Café</label>
+                  
+                    <input type="radio" name="season" id="fall" value="fall" />
+                    <label for="fall">Blanco</label>
+                  
+                    <input type="radio" name="season" id="winter" value="winter" />
+                    <label for="winter">Gordito</label>
+                  </fieldset>
+                  
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro I">
+                <h1 style="font-size: 1;"> ::DEFINIDO </h1>
+                <P>Representa cualquier elemento que se haya definido. Esto incluye cualquier elemento estándar integrado en el navegador y elementos personalizados que se hayan definido correctamente (es decir, con el método).:defined CustomElementRegistry.define()</P>
+                <simple-custom text="Custom element example text"></simple-custom>
+                <p>Standard paragraph example text</p>  
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::DIR() </h1>
+                <P>Coincide con los elementos en función de la direccionalidad del texto contenido en ellos.:dir()</P>
+                <div dir="rtl">
+                    <span>test1</span>
+                    <div dir="ltr">
+                      <span>test2</span>
+                      <div dir="auto">עִבְרִית</div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::DESACTIVADO </h1>
+                <P>Representa cualquier elemento deshabilitado. Un elemento está deshabilitado si no se puede activar (seleccionar, hacer clic, escribir, etc.) o aceptar el enfoque. El elemento también tiene un estado habilitado, en el que se puede activar o aceptar el foco.</P>
+                <form action="#">
+                    <fieldset id="shipping">
+                      <legend>Shipping address</legend>
+                      <input type="text" placeholder="Name" />
+                      <input type="text" placeholder="Address" />
+                      <input type="text" placeholder="Zip Code" />
+                    </fieldset>
+                    <br />
+                    <fieldset id="billing">
+                      <legend>Billing address</legend>
+                      <label for="billing-checkbox">Same as shipping address:</label>
+                      <input type="checkbox" id="billing-checkbox" checked />
+                      <br />
+                      <input type="text" placeholder="Name" disabled />
+                      <input type="text" placeholder="Address" disabled />
+                      <input type="text" placeholder="Zip Code" disabled />
+                    </fieldset>
+                  </form>
+                  
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::VACIO </h1>
+                <P>Representa cualquier elemento que no tenga hijos. Los elementos secundarios pueden ser nodos de elementos o texto (incluidos los espacios en blanco). Los comentarios, las instrucciones de procesamiento y el CSS no afectan si un elemento se considera vacío</P>
+                <center><div class="box"><!-- I will be lime. --></div>
+            <div class="box">este es el rosa</div> 
+            <div class="box">
+            <!-- I will be pink in older browsers because of the whitespace around this comment. -->
+            </div></center>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::ACTIVADO</h1>
+                <P>Representa cualquier elemento habilitado. Un elemento está habilitado si se puede activar (seleccionar, hacer clic, escribir, etc.) o aceptar el enfoque. El elemento también tiene un estado desactivado, en el que no se puede activar ni aceptar el foco</P>
+                <form action="url_of_form">
+                    <label for="FirstField">First field (enabled):</label>
+                    <input type="text" id="FirstField" value="Lorem" /><br />
+                  
+                    <label for="SecondField">Second field (disabled):</label>
+                    <input type="text" id="SecondField" value="Ipsum" disabled="disabled" /><br />
+                  
+                    <input type="button" value="Submit" />
+                  </form>
+                  
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::PRIMERO </h1>
+                <P>Utilizada con la regla-at , representa la primera página de un documento impreso. (Consulte el primer elemento general de un nodo).</P>
+                <p>First Page.</p>
+                <p>Second Page.</p>
+                <button>AQUI!</button>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::PRIMER HIJO </h1>
+                <P>Representa el primer elemento entre un grupo de elementos hermanos.</P>
+                <div>
+                    <p>Este es el texto seleccionado!</p>
+                    <p>This text isn't selected.</p>
+                  </div>
+                  
+                  <div>
+                    <h2>This text isn't selected: it's not a `p`.</h2>
+                    <p>This text isn't selected.</p>
+                  </div>
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>
+                      Item 3
+                      <ul>
+                        <li>Item 3.1</li>
+                        <li>Item 3.2</li>
+                        <li>Item 3.3</li>
+                      </ul>
+                    </li>
+                  </ul>                  
+            
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::PRIMERO DE TIPOS </h1>
+                <P>Representa el primer elemento de su tipo entre un grupo de elementos hermanos.</P>
+                <h2>Heading</h2>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+
+              </div> <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::ENFOCAR</h1>
+                <P>Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic o toca un elemento o lo selecciona con la tecla del teclado.</P>
+                <div><input class="red-input" value="I'll be red when focused." /></div>
+                <div><input class="blue-input" value="I'll be blue when focused." /></div>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;">::FOCO-VISIBLE </h1>
+                <P>Se aplica mientras un elemento coincide con la :focuspseudoclase y el UA ( agente de usuario ) determina a través de la heurística que el enfoque debe hacerse evidente en el elemento. (Muchos navegadores muestran un "anillo de enfoque" de forma predeterminada en este caso).</P>
+                <input value="Default styles" /><br />
+                <button>Default styles</button><br />
+                <input class="focus-only" value=":focus only" /><br />
+                <button class="focus-only">:focus only</button><br />
+                <input class="focus-visible-only" value=":focus-visible only" /><br />
+                <button class="focus-visible-only">:focus-visible only</button>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::FOCO-DENTRO </h1>
+                <P>Coincide con un elemento si el elemento o cualquiera de sus descendientes están enfocados. En otras palabras, representa un elemento que a su vez coincide con la pseudoclase o tiene un descendiente que coincide con . (Esto incluye descendientes en árboles de sombra )</P>
+                <p>Try typing into this form.</p>
+
+                <form>
+                  <label for="given_name">Given Name:</label>
+                  <input id="given_name" type="text" />
+                  <br />
+                  <label for="family_name">Family Name:</label>
+                  <input id="family_name" type="text" />
+                </form>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::PANTALLA COMPLETA</h1>
+                <P>Coincide con todos los elementos que se encuentran actualmente en modo de pantalla completa. Si varios elementos se han puesto en modo de pantalla completa, esto los selecciona a todos.</P>
+                <h1>MDN Web Docs Demo: :fullscreen pseudo-class</h1>
+
+              <p>
+                This demo uses the <code>:fullscreen</code> pseudo-class to automatically
+                change the style of a button used to toggle fullscreen mode on and off,
+                entirely using CSS.
+              </p>
+
+              <button id="fs-toggle">Toggle Fullscreen</button>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::TIENE()</h1>
+                <P></P>
+                <section>
+                  <article>
+                    <h1>Morning Times</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </article>
+                  <article>
+                    <h1>Morning Times</h1>
+                    <h2>Delivering you news every morning</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </article>
+                </section>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::ANFITRIÓN </h1>
+                <P>Selecciona el host de sombra del DOM de sombra que contiene el CSS en el que se usa; en otras palabras, esto le permite seleccionar un elemento personalizado desde dentro de su DOM de sombra.</P>
+                <h1>
+                  Host selectors <a href="#"><context-span>example</context-span></a>
+                </h1>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::HOST-CONTEXT() </h1>
+                <P>Selecciona el host de sombra del DOM de sombra que contiene el CSS que se usa dentro (por lo que puede seleccionar un elemento personalizado desde dentro de su DOM de sombra)</P>
+                <h1>
+                  Host selectors <a href="#"><context-span>example</context-span></a>
+                </h1>
+                                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::FLOTAR </h1>
+                <P>Coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Por lo general, se activa cuando el usuario pasa el cursor sobre un elemento (puntero del mouse).</P>
+                <a href="#">Este es el link.</a>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;">::EN EL RANGO </h1>
+                <P>Representa un elemento cuyo valor actual está dentro de los límites de rango especificados por los atributos y .:in-range input minmax</P>
+                <form action="" id="form1">
+                  <ul>
+                    Values between 1 and 10 are valid.
+                    <li>
+                      <input
+                        id="value1"
+                        name="value1"
+                        type="number"
+                        placeholder="1 to 10"
+                        min="1"
+                        max="10"
+                        value="12"
+                        required />
+                      <label for="value1">Your value is </label>
+                    </li>
+                  </ul>
+                </form>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::INDETERMINADO </h1>
+                <P>Representa cualquier elemento de formulario cuyo estado sea indeterminado, como casillas de verificación que tienen su atributo HTML establecido en , botones de opción que son miembros de un grupo en el que todos los botones de opción están desmarcados y elementos indeterminados.</P>
+                <fieldset>
+                  <legend>Checkbox</legend>
+                  <div>
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox">This checkbox label starts out lime.</label>
+                  </div>
+                </fieldset>
+                
+                <fieldset>
+                  <legend>Radio</legend>
+                  <div>
+                    <input type="radio" id="radio1" name="radioButton" value="val1" />
+                    <label for="radio1">First radio label starts out lime.</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="radio2" name="radioButton" value="val2" />
+                    <label for="radio2">Second radio label also starts out lime.</label>
+                  </div>
+                </fieldset>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::INVÁLIDO </h1>
+                <P>Representa cualquier , u otro elemento cuyo contenido no se pueda validar .</P>
+                <form>
+                  <div class="field">
+                    <label for="url_input">Enter a URL:</label>
+                    <input type="url" id="url_input" />
+                  </div>
+                
+                  <div class="field">
+                    <label for="email_input">Enter an email address:</label>
+                    <input type="email" id="email_input" required />
+                  </div>
+                </form>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::LANG() </h1>
+                <P>Coincide con los elementos en función del idioma en el que se determina que están.</P>
+                <div lang="en">
+                  <q>This English quote has a <q>nested</q> quote inside.</q>
+                </div>
+                <div lang="fr">
+                  <q>This French quote has a <q>nested</q> quote inside.</q>
+                </div>
+                <div lang="de">
+                  <q>This German quote has a <q>nested</q> quote inside.</q>
+                </div>
+                
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::ENLACE </h1>
+                <P>Representa un elemento que aún no ha sido visitado. Coincide con cada elemento no visitado o que tiene un atributo.</P>
+                <a href="https://www.youtube.com/watch?v=tlGUom_AV4o&list=RDEMiWS52Uz0KMxzaMuDTTXm9Q&index=25">Canción bonita <33.</a><br/>
+                <a href="">You've already visited this link.</a><br />
+                <a>Placeholder link (won't get styled)</a>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 uno">
+                <h1 style="font-size: 1;"> ::LOCAL-ENLACE </h1>
+                <P>Representa un enlace al mismo documento. Por lo tanto, un elemento que es el ancla de origen de un hipervínculo cuya URL absoluta de destino coincide con la propia URL del documento del elemento.</P>
+                <a href="#target">This is a link on the current page.</a><br />
+                <a href="https://example.com">This is an external link</a><br />
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 dos">
+                <h1 style="font-size: 1;"> ::NO() </h1>
+                <P>Representa elementos que no coinciden con una lista de selectores. Dado que evita que se seleccionen elementos específicos, se conoce como pseudoclase de negación </P>
+                <p>I am a paragraph.</p>
+                <p class="fancy">I am so very fancy!</p>
+                <div>I am NOT a paragraph.</div>
+                <h2>
+                  <span class="foo">foo inside h2</span>
+                  <span class="bar">bar inside h2</span>
+                </h2>
+
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 tres">
+                <h1 style="font-size: 1;"> ::NTH-CHILD() </h1>
+                <P>Coincide con los elementos en función de su posición entre un grupo de hermanos.</P>
+                
+                <p>Children 1, 3, 5, and 7 are selected.</p>
+                <div class="first">
+                  <span>Span 1!</span>
+                  <span>Span 2</span>
+                  <span>Span 3!</span>
+                  <span>Span 4</span>
+                  <span>Span 5!</span>
+                  <span>Span 6</span>
+                </div>
+              
+              </div>
+              <div class="col-xl-3 col-md-6 col-xs-12 cuatro">
+                <h1 style="font-size: 1;"> ::OPCIONAL </h1>
+                <P>Representa cualquier elemento que no tenga el atributo establecido.</P>
+                <form>
+                  <div class="field">
+                    <label for="url_input">Enter a URL:</label>
+                    <input type="url" id="url_input" />
+                  </div>
+                
+                  <div class="field">
+                    <label for="email_input">Enter an email address:</label>
+                    <input type="email" id="email_input" required />
+                  </div>
+                </form>
+                
+              </div>
+            </section>
+
+
+      </header>
+    </header>
+  </body>
+</html>

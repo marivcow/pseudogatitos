@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    display:inline;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.uno {
+    background-color:#D9DBF1;
+    border: 1px solid whitesmoke;
+}
+.dos {
+    background-color:#B4BCDF;
+    border: 1px solid whitesmoke;
+}
+.tres {
+    background-color: #EAF7CA;
+    border: 1px solid whitesmoke;
+}
+.cuatro {
+    background-color: #DBF4A7;
+    border: 1px solid whitesmoke;
+}
+
+a:link { 
+    color: blue; 
+}          /* Enlaces no visitados */
+a:visited { 
+    color: rgb(116, 144, 204); 
+}     /* Enlaces visitados */
+a:hover { 
+    background: rgb(55, 64, 73); 
+}  /* El usuario esta sobre el enlace */
+a:active { 
+    color: rgb(139, 157, 179); 
+}        /* Enlaces activos */
+
+select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color:  rgb(160, 114, 125);
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px rgb(228, 182, 182);
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px rgb(236, 175, 206);
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: rgb(141, 101, 101);
+}
+:current(p, span) {
+    background-color: yellow;
+
+}
+input:default {
+    box-shadow: 0 0 2px 1px rgb(228, 182, 182);
+  }
+  
+  input:default + label {
+    color: rgb(236, 175, 206);  
+}
+/* Give the two elements distinctive backgrounds */
+p {
+    color: black;
+  }
+  
+  simple-custom {
+    background: rgb(77, 83, 83);
+  }
+  
+  /* Both the custom and the built-in element are given italic text */
+.cuatro I :defined {
+    font-style:italic;
+  }
+  simple-custom:not(:defined) {
+    display: none;
+  }
+  
+  simple-custom:defined {
+    display: block;
+  }
+  :dir(ltr) {
+    background-color: rgb(233, 201, 236);
+  }
+  
+  :dir(rtl) {
+    background-color: powderblue;
+  }
+  input[type="text"]:disabled {
+    background: #ccc;
+  }
+  .box {
+    background: rgb(255, 221, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 80px;
+
+  }
+  
+  .box:empty {
+    background: plum;
+  }
+  input:enabled {
+    color: rgb(107, 161, 107);
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  p {
+    page-break-after: always;
+  }
+  p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  ul li {
+    color: rgb(66, 15, 77);
+  }
+  
+  ul li:first-child {
+    color: rgb(109, 17, 121);
+    font-weight: bold;
+  }
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+  input,
+  button {
+    margin: 10px;
+  }
+  
+  .focus-only:focus {
+    outline: 2px solid rgb(66, 15, 77);
+  }
+  
+  .focus-visible-only:focus-visible {
+    outline: 4px dashed rgb(109, 17, 121);
+  }
+  form {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+  }
+  
+  form:focus-within {
+    background: rgb(243, 243, 243);
+    color: black;
+  }
+  
+  input {
+    margin: 4px;
+  }
+  #fs-toggle:not(:fullscreen) {
+    background-color: #afa;
+  }
+  a {
+    transition: background-color 0.5s;
+  }
+  
+  a:hover {
+    background-color: rgb(181, 189, 197);
+  }
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid black;
+  }
+  
+  input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+  }
+  
+  input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid rgb(204, 63, 63);
+  }
+  
+  input:in-range + label::after {
+    content: "okay.";
+  }
+  
+  input:out-of-range + label::after {
+    content: "out of range!";
+  }
+  input:indeterminate + label {
+    background: none
+  }
+  label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }
+  :lang(en) > q {
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  :lang(fr) > q {
+    quotes: "« " " »";
+  }
+  :lang(de) > q {
+    quotes: "»" "«" "\2039""\203A";
+  }
+  html {
+    font-family: sans-serif;
+  }
+  
+  span,
+  div em {
+    padding: 5px;
+    border: 1px solid rgb(140, 163, 140);
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+  
+  .first span:nth-child(2n + 1),
+  .second span:nth-child(2n + 1),
+  .third span:nth-of-type(2n + 1) {
+    background-color: rgb(136, 161, 140);
+  }
+  label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:optional {
+    border-color: rgb(156, 124, 189);
+    border-width: 3px;
+  }
+      
+  
+  
+  
+  
+    
+  
+  
+      
+    
+  
+  
+  
+  
+
